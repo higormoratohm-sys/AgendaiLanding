@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 35 25% 97%;
+    --foreground: 25 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 25 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 15% 15%;
+
+    --primary: 345 75% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 25 45% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 35 15% 92%;
+    --muted-foreground: 25 10% 45%;
+
+    --accent: 15 65% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 345 75% 60%;
+
+    --radius: 1rem;
+
+    /* Custom brand colors */
+    --brand-rose: 345 75% 60%;
+    --brand-terracotta: 25 45% 55%;
+    --brand-cream: 35 30% 95%;
+    --brand-charcoal: 25 15% 15%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(345 75% 60%) 0%, hsl(25 45% 55%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(35 25% 97%) 0%, hsl(0 0% 100%) 100%);
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(345 75% 60% / 0.15);
+    --shadow-card: 0 8px 30px -6px hsl(25 15% 15% / 0.1);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 25 20% 10%;
+    --foreground: 35 15% 95%;
+
+    --card: 25 20% 12%;
+    --card-foreground: 35 15% 95%;
+
+    --popover: 25 20% 12%;
+    --popover-foreground: 35 15% 95%;
+
+    --primary: 345 75% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 25 35% 35%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 25 15% 18%;
+    --muted-foreground: 35 10% 60%;
+
+    --accent: 15 65% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 25 15% 20%;
+    --input: 25 15% 20%;
+    --ring: 345 75% 60%;
+    
+    --brand-rose: 345 75% 60%;
+    --brand-terracotta: 25 45% 55%;
+    --brand-cream: 25 15% 18%;
+    --brand-charcoal: 35 15% 95%;
+    
+    --shadow-soft: 0 4px 20px -2px hsl(345 75% 60% / 0.2);
+    --shadow-card: 0 8px 30px -6px hsl(0 0% 0% / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+  }
+}
