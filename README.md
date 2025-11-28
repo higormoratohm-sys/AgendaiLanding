@@ -37,7 +37,7 @@ Um link para acessar o site localmente será disponibilizado em seu terminal.
 ### Alunos
 
 - Gabriel Nascimento
-- Gabriely Lopez
+- Gabriely Lopes
 - Guilherme Almeida 
 - Guilherme Portugal 
 - Higor Morato
